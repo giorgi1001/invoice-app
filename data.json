@@ -1,0 +1,31 @@
+{
+  "id": "MV6949",
+  "item_list": [
+    {
+      "id": "random1",
+      "name": "wd",
+      "price": "55",
+      "quantity": "55",
+      "total_price": 3025
+    }
+  ],
+  "item_total_price": 3025,
+  "serial_number": "sfsf",
+  "payment_end_date": "2020-08-10",
+  "status": "pending",
+  "description": "uhhu",
+  "sender_username": "gaga",
+  "sender_email": "EF6372@gmail.com",
+  "sender_country": "Georgia",
+  "sender_city": "Tbilisi",
+  "sender_street_address": "kishiniovi st",
+  "sender_postcode": "0101",
+  "reciever_username": "qqqqq",
+  "reciever_email": "nickcave5@gmail.com",
+  "reciever_country": "Usa",
+  "reciever_city": "fwefew",
+  "reciever_street_address": "deew",
+  "reciever_postcode": "3321",
+  "payment_terms": "7",
+  "payment_start_date": "2020-08-3"
+}

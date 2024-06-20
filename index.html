@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.mjs" defer type="module"></script>
+  </head>
+  <body>
+    <main>
+      <header class="main-header">
+        <img class="logo-img" src="./assets/Group 9.png" alt="logo img" />
+
+        <div class="theme-avatar">
+          <div class="theme-image">
+            <img class="moon" src="./assets/icon-moon.svg" alt="moon icon" />
+            <img class="sun" src="./assets/icon-sun.svg" alt="" />
+          </div>
+          <div class="line"></div>
+          <img
+            class="avatar"
+            src="./assets/image-avatar.jpg"
+            alt="avatar img"
+          />
+        </div>
+      </header>
+      <section class="main-section">
+        <div class="container">
+          <div class="invoices">
+            <h1>Invoices</h1>
+            <span class="invoice-qty-text">There are </span>
+            <span class="invoice-qty">0</span>
+            <span class="invoice-qty-text">total</span>
+            <span> invoices</span>
+          </div>
+          <div class="filter-new-container">
+            <div class="filter">
+              <span>Filter <span class="by-status">by status</span></span>
+              <img
+                class="arrow-down"
+                src="./assets/icon-arrow-down.svg"
+                alt="arrow-down icon"
+              />
+              <div class="sort-status">
+                <div>
+                  <input type="checkbox" id="draft" />
+                  <label for="draft">Draft</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="pending" />
+                  <label for="pending">Pending</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="paid" />
+                  <label for="paid">Paid</label>
+                </div>
+              </div>
+            </div>
+            <button class="add-invoice-button">
+              <div>
+                <img src="./assets/icon-plus.svg" alt="plus icon" />
+              </div>
+              <span>New <span class="hide-invoice">Invoice</span></span>
+            </button>
+          </div>
+        </div>
+        <div class="empty-div">
+          <img
+            class="empty-img"
+            src="./assets/illustration-empty.svg"
+            alt="empty img"
+          />
+          <div class="nothing-here">
+            <span>There is nothing here</span>
+            <p>Create an invoice by clicking the New button and get started</p>
+          </div>
+        </div>
+        <div class="all-invoices">
+          <div class="invoice-rectangle">
+            <span class="hashtag"
+              ><span class="text-style-1">#</span>RT3080</span
+            >
+
+            <p class="date">Due 19 Aug 2021</p>
+            <span class="name">Jensen Huang</span>
+            <span class="amount">£ 1,800.90</span>
+            <div class="paid">
+              <div class="opacity"></div>
+              <div class="dot"></div>
+              <p>Paid</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="create-invoice">
+        <section class="new-invoice-section">
+          <div class="go-back">
+            <img src="./assets/icon-arrow-left.svg" alt="left arrow" />
+            <span>Go back</span>
+          </div>
+          <h2>New Invoice</h2>
+          <span class="bill-from">Bill From</span>
+          <div class="bill-from-rectangle">
+            <label class="long-input"
+              >Street Adress
+              <input class="input from-adress" type="text" />
+            </label>
+            <label
+              >City
+              <input class="input from-city" type="text" />
+            </label>
+            <label
+              >Post Code
+              <input class="input from-post-code" type="text" />
+            </label>
+            <label class="long-input"
+              >Country
+              <input class="input from-country" type="text" />
+            </label>
+          </div>
+          <span class="bill-to">Bill To</span>
+          <div class="bill-to-rectangle">
+            <label class="long-input"
+              >Client’s Name
+              <input class="input client-name" type="text" />
+            </label>
+            <label class="long-input"
+              >Client’s Email
+              <input
+                class="input email"
+                type="text"
+                placeholder="e.g. email@example.com"
+              />
+            </label>
+            <label class="long-input"
+              >Street Address
+              <input class="input adress" type="text" />
+            </label>
+            <label
+              >City
+              <input class="input city" type="text" />
+            </label>
+            <label
+              >Post Code
+              <input class="input post-code" type="text" />
+            </label>
+            <label class="long-input"
+              >Country
+              <input class="input country" type="text" />
+            </label>
+            <div class="input-container">
+              <label class="long-input"
+                >Invoice Date
+                <input
+                  class="input invoice-date"
+                  type="text"
+                  placeholder="21 Aug 2021"
+                />
+                <img
+                  class="calendar-img"
+                  src="./assets/icon-calendar.svg"
+                  alt="calendar icon"
+                />
+              </label>
+            </div>
+            <div class="input-container">
+              <label class="long-input"
+                >Payment Terms
+                <input
+                  class="input payment-terms"
+                  type="text"
+                  placeholder="Enter: 1, 7, 14 or 30 days!"
+                />
+                <img
+                  class="arrow-down-img"
+                  src="./assets/icon-arrow-down.svg"
+                  alt="arrow-down icon"
+                />
+              </label>
+            </div>
+
+            <label class="long-input"
+              >Project Description
+              <input
+                class="input project-description"
+                type="text"
+                placeholder="e.g. Graphic Design Service"
+              />
+            </label>
+          </div>
+          <div>
+            <span class="item-list">Item List</span>
+            <div class="item-info">
+              <span>Item Name</span>
+              <span>Qty.</span>
+              <span>Price</span>
+              <span>Total</span>
+            </div>
+            <div class="all-items"></div>
+          </div>
+          <button class="add-new-item">+ Add New Item</button>
+        </section>
+        <div class="gray-div"></div>
+        <div class="action-div">
+          <button class="btn discard">Discard</button>
+          <button class="btn save-draft">Save as Draft</button>
+          <button class="btn save-send">Save & Send</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
